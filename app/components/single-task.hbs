@@ -1,4 +1,18 @@
-<li class="list-group-item {{if @task.isComplete "is-complete"}}">
+<tr>
+  <td>
+    <input class="check-box mr-2" type="checkbox" aria-label="Checkbox for following text input">
+    {{@task.name}}
+    <small class="task-description ml-3 d-block">
+      {{@task.description}}
+    </small>
+  </td>
+  <td class="action" id="l-col">
+    <img src="/assets/unpin.svg" alt="pin">
+    <span class="badge badge-pill badge-light ml-3" id="done">Done</span>
+  </td>
+</tr>
+
+{{!-- <li class="list-group-item {{if @task.isComplete "is-complete"}}">
   <div class="d-flex">
     <h5 class="card-title flex-fill">
       {{@task.name}}
@@ -7,9 +21,9 @@
       <div class="btn-group btn-group-sm" role="group">
         <BsButton @type="secondary">Pin</BsButton>
         {{#if @task.isComplete}}
-          <BsButton @type="primary" onClick={{action (mut @task.isComplete) false}}>Undo</BsButton>
+        <BsButton @type="primary" onClick={{action (mut @task.isComplete) false}}>Undo</BsButton>
         {{else}}
-          <BsButton @type="primary" onClick={{action (mut @task.isComplete) true}}>Done</BsButton>
+        <BsButton @type="primary" onClick={{action (mut @task.isComplete) true}}>Done</BsButton>
         {{/if}}
       </div>
     </div>
@@ -17,4 +31,4 @@
   <div class="task-description">
     {{@task.description}}
   </div>
-</li>
+</li> --}}

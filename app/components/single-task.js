@@ -1,5 +1,4 @@
 import Component from '@glimmer/component';
 
-export default
-  class SingleTaskComponent extends Component {
+export default class SingleTaskComponent extends Component {
 }

@@ -1,13 +1,147 @@
-.main-container{
-  display: grid;
-  grid-template-columns: 20% auto;
 
-  .side-nav {
-    border-right: 1px black;
+li.borderless {
+  border: 0 none;
+  list-style-type: none;
+  margin-top: 20px;
+  cursor: pointer;
+  
+}
+.side-bar {
+  width: 220px;
+  height: 768px;
+  text-align: center;
+}
+
+.sidebar-heading{
+  margin-top: 19px;
+  margin-bottom: 30px;
+}
+.content{
+  margin-left: 30px;
+}
+
+.action{
+  padding-right:0;
+  text-align: left;
+  color: #909398;
+  margin-left: 50px;
+}
+
+ .table tr {
+    padding: 0.75rem;
+    padding-right: 0px;
+    vertical-align: top;
+    border-top: unset;
+    border-bottom: 1px solid #dee2e6;
+}
+
+#done{
+  color: #909398;
+}
+li.borderless:hover { 
+  color: #0854D9; 
+  background:  #ECEEF0;
+  border-right: 1px solid #0854D9;
+  height: 40px;
+  padding-top: 7px;
+  
+}
+
+.table tr:hover {
+  background: #F7FCFD;
+  cursor: pointer;
+}
+
+.table th{
+  border: 0 none;
+}
+.nav-link {
+  padding-left: 0px;
+  color: #909398;
+
   }
+
+.nav-link:hover {
+  border-bottom: 2px solid #0854D9;
+  padding-bottom: 4px;
+
 }
-.is-complete {
-  opacity: 0.6;
-  text-decoration: line-through;
-  background: #d1d1d1;
+.nav{
+  padding-left: 0px;
 }
+
+.img-right{
+  float: right;
+  margin-top: 10px;
+}
+
+#l-col{
+  float: right;
+}
+
+.table th, .table td{
+  border-top: none;
+}
+.table thead th {
+    border-bottom: none;
+}
+.task-description{
+  color: #888C93;
+}
+// .main-container{
+//   display: grid;
+//   grid-template-columns: 20% auto;
+
+//   .side-nav {
+//     border-right: 1px black;
+//   }
+// }
+// .is-complete {
+//   opacity: 0.6;
+//   text-decoration: line-through;
+//   background: #d1d1d1;
+// }
+// body {
+//   overflow-x: hidden;
+// }
+
+// #sidebar-wrapper {
+//   min-height: 100vh;
+//   margin-left: -15rem;
+//   -webkit-transition: margin .25s ease-out;
+//   -moz-transition: margin .25s ease-out;
+//   -o-transition: margin .25s ease-out;
+//   transition: margin .25s ease-out;
+// }
+
+// #sidebar-wrapper .sidebar-heading {
+//   padding: 0.875rem 1.25rem;
+//   font-size: 1.2rem;
+// }
+
+// #sidebar-wrapper .list-group {
+//   width: 15rem;
+// }
+
+// #page-content-wrapper {
+//   min-width: 100vw;
+// }
+
+// #wrapper.toggled #sidebar-wrapper {
+//   margin-left: 0;
+// }
+
+// @media (min-width: 768px) {
+//   #sidebar-wrapper {
+//     margin-left: 0;
+//   }
+
+//   #page-content-wrapper {
+//     min-width: 0;
+//     width: 100%;
+//   }
+
+//   #wrapper.toggled #sidebar-wrapper {
+//     margin-left: -15rem;
+//   }
+// }
