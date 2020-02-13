@@ -1,7 +1,9 @@
 <tr>
   <td>
-    <input class="check-box mr-2" type="checkbox" aria-label="Checkbox for following text input">
-    {{@task.name}}
+    <label class="container">{{@task.name}}
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
     <small class="task-description ml-3 d-block">
       {{@task.description}}
     </small>
