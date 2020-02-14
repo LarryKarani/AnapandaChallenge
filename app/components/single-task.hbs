@@ -9,8 +9,18 @@
     </small>
   </td>
   <td class="action" id="l-col">
-    <img src="/assets/unpin.svg" alt="pin">
-    <span class="badge badge-pill badge-light ml-3" id="done">Done</span>
+    {{#if @task.isPined}}
+    <img {{on "click" (fn this.updatePin @task.id)}} src="/assets/pin.svg" alt="pin">
+    {{else}}
+    <img {{on "click" (fn this.updatePin @task.id)}} src="/assets/unpin.svg" alt="pin">
+    {{/if}}
+
+    {{#if @task.isComplete}}
+    <span {{on "click" (fn this.toggleCompletion @task.id)}} class="badge ml-3" id="completed">Completed</span>
+    {{else}}
+    <span {{on "click" (fn this.toggleCompletion @task.id)}} class="badge badge-pill badge-light ml-3"
+      id="done">Done</span>
+    {{/if}}
   </td>
 </tr>
 

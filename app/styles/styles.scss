@@ -34,8 +34,14 @@ li.borderless {
     border-bottom: 1px solid #dee2e6;
 }
 
+#completed{
+  background-color:#26D692;
+  color: #FFF;
+}
 #done{
-  color: #909398;
+  color: #2B2F36;
+  width: 71.29px;
+  background-color:  #EDF0F4;
 }
 .active-side,li.borderless:hover { 
   color: #0854D9; 
