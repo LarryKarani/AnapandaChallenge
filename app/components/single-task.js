@@ -3,7 +3,6 @@ import { inject as service } from '@ember/service';
 import { action } from "@ember/object";
 
 export default class SingleTaskComponent extends Component {
-    
     @service store;
 
     @action
@@ -17,8 +16,9 @@ export default class SingleTaskComponent extends Component {
     @action
     toggleCompletion(id) {
         let task = this.store.peekRecord('task', id)
+        let tasks = this.store.peekAll('task')
         const { isComplete } = task;
         task.isComplete = !isComplete ;
-        console.log(task.isComplete )
+        console.log(tasks)
     }
 }

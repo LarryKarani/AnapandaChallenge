@@ -2,8 +2,12 @@
     <div class="row">
         <div class="col-md-8 pl-0 mt-3">
             <nav class="nav top-nav">
-                <a class="nav-link active" href="#">All Tasks</a>
-                <a class="nav-link ml-3" href="#">Completed tasks</a>
+                <LinkTo @route="task-list" class="nav-link ml-3">
+                    All Tasks
+                </LinkTo>
+                <LinkTo @route="completed-tasks" class="nav-link ml-3">
+                    Completed tasks
+                </LinkTo>
             </nav>
         </div>
         <div class="col-md-4">

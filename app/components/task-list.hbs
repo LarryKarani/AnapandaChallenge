@@ -11,7 +11,7 @@
         </tr>
       </thead>
       <tbody>
-        {{#each @tasks as |task|}}
+        {{#each this.tasks as |task|}}
         <SingleTask @task={{task}} />
         {{/each}}
       </tbody>
