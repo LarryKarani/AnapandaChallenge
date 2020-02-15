@@ -15,7 +15,7 @@ export default class IndexRoute extends Route {
                 id: 2,
                 name: 'A task',
                 description: 'This is a task.',
-                isComplete: true,
+                isComplete: false,
                 creator: 2,
                 isPined: false
             }),

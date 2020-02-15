@@ -11,6 +11,15 @@
         </tr>
       </thead>
       <tbody>
+        {{#if this.hasPin}}
+        <tr>
+          <td>
+            Pinned tasks
+          </td>
+          <td>
+          </td>
+        </tr>
+        {{/if}}
         {{#each this.tasks as |task|}}
         <SingleTask @task={{task}} />
         {{/each}}

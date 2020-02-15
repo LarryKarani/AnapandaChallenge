@@ -11,9 +11,13 @@
                 </tr>
             </thead>
             <tbody>
+                {{#if this.completedTasks }}
                 {{#each this.completedTasks as |task|}}
                 <SingleTask @task={{task}} />
                 {{/each}}
+                {{else}}
+                <NoTasks/>
+                {{/if}}
             </tbody>
         </table>
     </div>

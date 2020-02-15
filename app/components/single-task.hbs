@@ -1,7 +1,11 @@
 <tr>
   <td>
     <label class="container">{{@task.name}}
-      <input type="checkbox">
+      {{#if @task.isComplete}}
+      <input type="checkbox"  checked disabled >
+      {{else}}
+      <input type="checkbox"  disabled>
+      {{/if}}
       <span class="checkmark"></span>
     </label>
     <small class="task-description ml-3 d-block">
